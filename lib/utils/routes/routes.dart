@@ -8,7 +8,7 @@ import 'package:getx_flutter/view/login_view.dart';
 
 class Routes {
 
-  static MaterialPageRoute generateRoute(RouteSettings settings) {
+  static Route<dynamic> generateRoute(RouteSettings settings) {
 
     switch(settings.name){
       case RoutesName.home:

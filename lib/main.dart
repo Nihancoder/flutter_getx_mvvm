@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:getx_flutter/utils/routes/routes.dart';
+import 'package:getx_flutter/utils/routes/routes_name.dart';
 import 'package:getx_flutter/view/login_view.dart';
 
 void main() {
@@ -12,7 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LoginScreen(),
+      initialRoute: RoutesName.login,
+      onGenerateRoute: Routes.generateRoute,
     );
   }
 }
